@@ -23,9 +23,8 @@ $(document).ready(attachListeners);
                    [2,5,8],
                    [0,4,8],
                    [6,4,2]];
-
- var turn = 0
-let gameNumber = 0
+var turn = 0;
+let gameNumber = 0;
 
  function player() {
   return (turn % 2 === 0 ? "X" : "O");
