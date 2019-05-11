@@ -11,7 +11,7 @@ $(document).ready(attachListeners)
    $("button#save").on("click", () => saveGame());
   $("button#previous").on("click", () => previousGame());
   $("button#clear").on("click", () => clearGame());
-};
+}
 
 
 
