@@ -44,8 +44,8 @@ let gameNumber = 0
   let board = [];
   let winner = false;
   $("td").text(function(index, token){
-    board[index] = token
-  })
+    board[index] = token;
+  });
 
    WIN_COMBOS.forEach(function(combo){
     if (
@@ -56,7 +56,7 @@ let gameNumber = 0
       setMessage(`Player ${board[combo[0]]} Won!`);
       winner = true;
     }
-  })
+  });
     return winner;
 }
 
@@ -65,12 +65,12 @@ let gameNumber = 0
   turn += 1;
 
    if (checkWinner()){
-    saveGame()
-    clearGame()
+    saveGame();
+    clearGame();
   } else if (turn === 9) {
-    setMessage("Tie game.")
-    saveGame()
-    clearGame()
+    setMessage("Tie game.");
+    saveGame();
+    clearGame();
   }
 }
 
@@ -98,9 +98,9 @@ let gameNumber = 0
 }
 
  function clearGame() {
-  $('td').empty()
-  turn = 0
-  gameNumber = 0
+  $('td').empty();
+  turn = 0;
+  gameNumber = 0;
 }
 
  function previousGame() {
