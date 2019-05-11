@@ -1,10 +1,10 @@
-$(document).ready(attachListeners)
+$(document).ready(attachListeners);
 
 
  function attachListeners () {
   $("td").on("click", function() {
     if($(this).is(':empty') && !checkWinner()) {
-    doTurn(this)
+    doTurn(this);
     }
   });
 
